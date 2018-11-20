@@ -1,0 +1,16 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    schema: classpath:db/schema-h2.sql
+    data: classpath:db/data-h2.sql
+    url: jdbc:h2:mem:test
+    username: root
+    password: test
+
+
+# Logger Config
+logging:
+  level:
+    com.vincent.mybatisplus.samples: debug
+# MyBatis-Plus \u914D\u7F6E\u8BE5\u6F14\u793A\u65E0
